@@ -40,9 +40,6 @@ jobs:
       - name: Install dependencies
         run: npm install --package-lock-only && npm ci
 
-      - name: Run ESLint
-        run: npm init @eslint/config@latest
-
       - name: Check code style
         run: npm run format:check
 
