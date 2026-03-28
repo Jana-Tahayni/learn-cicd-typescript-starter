@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 ADD . .
 
-RUN npm ci || cat /root/.npm/_logs/*
+RUN npm ci 
 
 RUN npm run build
 
